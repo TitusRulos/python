@@ -61,24 +61,39 @@
  #else:
  #    print("Las dos palabras tienen el mismo largo")
 
-# Ejercicio 10.
-    # import datetime as dt
-    # print("Ingrese su nacimiento")
-    # dia=int(input("Día: "))
-    # mes=int(input("Mes: "))
-    # año=int(input("Año: "))
-    # diaActual=dt.day
-    # print(diaActual)
-    # mesActual=int(dt.month  )
-    # añoActual=int(dt.year)
-    # edad=añoActual-año
-    # if mesActual>mes:
-    #     edad=edad-1
-    # elif mesActual==mes and diaActual>dia:
-    #     edad=edad-1
-    # else:
-    #     print(edad)
-    # print(edad)
+# Ejercicio 10.  
+# import datetime as dt
+# def es_bisiesto(año):
+#     return (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0)
+# def fecha_valida(dia, mes, año):
+#     dias_por_mes = {
+#         1: 31, 2: 29 if es_bisiesto(año) else 28,
+#         3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31
+#     }
+#     if mes < 1 or mes > 12:
+#         return False
+#     if dia < 1 or dia > dias_por_mes[mes]:
+#         return False
+#     return True
+# def calcular_edad(fecha_nacimiento):
+#     fecha_actual = dt.datetime.now()
+#     edad = fecha_actual.year - fecha_nacimiento.year
+#     if (fecha_actual.month, fecha_actual.day) < (fecha_nacimiento.month, fecha_nacimiento.day):
+#         edad -= 1
+#     return edad
+# def obtener_fecha_de_nacimiento():
+#     print("Ingrese su nacimiento")
+#     dia = int(input("Día: "))
+#     mes = int(input("Mes: "))
+#     año = int(input("Año: "))
+#     return dt.datetime(año, mes, dia)
+# fecha_nacimiento = obtener_fecha_de_nacimiento()
+# if fecha_valida(fecha_nacimiento.day, fecha_nacimiento.month, fecha_nacimiento.year):
+#     print("La fecha es válida")
+#     edad = calcular_edad(fecha_nacimiento)
+#     print(f"Su edad es {edad} años.")
+# else:
+#     print("La fecha no es válida")
 
 
     
