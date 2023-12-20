@@ -67,8 +67,18 @@
 #     return (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0)
 # def fecha_valida(dia, mes, año):
 #     dias_por_mes = {
-#         1: 31, 2: 29 if es_bisiesto(año) else 28,
-#         3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31
+#         1: 31,
+#         2: 29 if es_bisiesto(año) else 28,
+#         3: 31, 
+#         4: 30,
+#         5: 31,
+#         6: 30,
+#         7: 31, 
+#         8: 31,
+#         9: 30,
+#         10: 31, 
+#         11: 30, 
+#         12: 31
 #     }
 #     if mes < 1 or mes > 12:
 #         return False
@@ -96,6 +106,40 @@
 #     print("La fecha no es válida")
 
 #Ejercicio 11.
+# numeros=int(input("cantidad de números: "))
+# ordenamiento=[]
+# for i in range (numeros):
+#     num=int(input(f"numero {i+1}: "))
+#     ordenamiento.append(num)
+# for i in range(len(ordenamiento)):
+#     for j in range(i+1, len(ordenamiento)):
+#         if ordenamiento[i]>ordenamiento[j]:
+#             ordenamiento[j], ordenamiento[i]=ordenamiento[i], ordenamiento[j]
+# print(ordenamiento)
+
+#Ejercicio 12.
+# estatura, peso, edad= float(input("estatura: ")), float(input("peso: ")), int(input("edad: "))
+# indice=(peso/(estatura**2))
+# if indice<22 and edad<45:
+#     print(f"bajo, indice: {round(indice, 2)}")
+# elif indice<22 and edad>=45:
+#     print(f"medio, indice {round(indice, 2)}")
+# elif indice>=22 and edad<45:
+#     print(f"medio, indice {round(indice, 2)}")
+# elif indice>=22 and edad>=45:
+#     print(f"alto, indice {round(indice, 2)}")
+
+#Ejercicio 13.
+
+
+
+
+
+           
+    
+
+
+
 
 
 
