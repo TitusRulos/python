@@ -65,7 +65,7 @@
 # import datetime as dt
 # def es_bisiesto(año):
 #     return (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0)
-# def fecha_valida(dia, mes, año):
+# def fecha_valida(año, mes, dia):
 #     dias_por_mes = {
 #         1: 31,
 #         2: 29 if es_bisiesto(año) else 28,
@@ -84,7 +84,9 @@
 #         return False
 #     if dia < 1 or dia > dias_por_mes[mes]:
 #         return False
-#     return True
+#     else:
+#          return True
+   
 # def calcular_edad(fecha_nacimiento):
 #     fecha_actual = dt.datetime.now()
 #     edad = fecha_actual.year - fecha_nacimiento.year
@@ -98,7 +100,7 @@
 #     año = int(input("Año: "))
 #     return dt.datetime(año, mes, dia)
 # fecha_nacimiento = obtener_fecha_de_nacimiento()
-# if fecha_valida(fecha_nacimiento.day, fecha_nacimiento.month, fecha_nacimiento.year):
+# if fecha_valida(fecha_nacimiento.year, fecha_nacimiento.month, fecha_nacimiento.day):
 #     print("La fecha es válida")
 #     edad = calcular_edad(fecha_nacimiento)
 #     print(f"Su edad es {edad} años.")
