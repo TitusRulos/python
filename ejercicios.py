@@ -132,6 +132,44 @@
 #     print(f"alto, indice {round(indice, 2)}")
 
 #Ejercicio 13.
+# def juegosVerdaderos(juego_A, juego_B):
+#     if juego_A>7 or juego_B>7:
+#         return False
+#     elif juego_A<1 or juego_B<1:
+#         return False
+#     elif juego_A==7 and juego_B<5:
+#         return False
+#     elif juego_B==7 and juego_A<5:
+#         return False
+#     else:
+#         return True
+# juego_A, juego_B=int(input("numeros de juegos de A: ")),int(input("numero de juegos de B:"))
+# if juegosVerdaderos(juego_A, juego_B):
+#     if juego_A>5 and juego_B>5:
+#         if juego_A==7 and juego_B<juego_A:
+#             print("gano a")
+#         elif juego_B==7 and juego_A<juego_B:
+#             print("gano b")
+#         else:
+#             print("no se ha definido ganador")
+#     elif juego_A==6 and juego_B<5:
+#         print("ganó a")
+#     elif juego_B==6 and juego_A<5:
+#         print("ganó b")       
+# else:
+#     print("el numero de juegos es invalido")}
+
+
+    
+
+        
+        
+
+
+
+
+
+
 
 
 
